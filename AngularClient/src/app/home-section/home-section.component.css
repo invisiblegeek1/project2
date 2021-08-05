@@ -1,0 +1,14 @@
+.Home_Section_Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("../../assets/homeBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.Landing_Page_Image{
+    width: 550px;
+    height: 550px;
+}
