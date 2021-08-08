@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {  
+  FormBuilder,  
+  FormGroup  
+} from '@angular/forms';
 
 @Component({
   selector: 'app-user-form',
@@ -7,7 +11,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public accountHolderName:String,
+    public mobile:String
+  ) { }
 
   ngOnInit(): void {
   }
