@@ -1,18 +1,24 @@
 
 <div class="User_Form_Container">
-    <form class="form-signin">
-        <p class="User_Form_Logo">Instapay</p>
-        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
-      </form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name"
+           required
+           [(ngModel)]="model.name" name="name">
+  </div>
+  
+  <div class="form-group">
+    <label for="alterEgo">Alter Ego</label>
+    <input type="text"  class="form-control" id="alterEgo"
+           [(ngModel)]="model.alterEgo" name="alterEgo">
+  </div>
+  
+  <div class="form-group">
+    <label for="power">Hero Power</label>
+    <select class="form-control"  id="power"
+            required
+            [(ngModel)]="model.power" name="power">
+      <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+    </select>
+  </div>
 </div>

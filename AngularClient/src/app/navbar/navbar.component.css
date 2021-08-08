@@ -1,0 +1,32 @@
+.NavBar_Container{
+    display: inline-flex;
+    width: 100%;
+    height: 60px;
+    background-color: #474CD4;
+    position: fixed;
+    top: 0;
+    color: #fff;
+    justify-content: space-around;
+    flex-flow: row;
+}
+.Logo_Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Right_Nav_Items_Container{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+.Nav_items_List{
+    display: flex;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    width: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
